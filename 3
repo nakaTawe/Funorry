@@ -1,0 +1,72 @@
+.css-slideshow{
+  position: relative;
+  max-width: 350px;
+  height: 240px;
+  margin: 5em auto .5em auto;
+ 
+}
+.css-slideshow figure{
+  margin: 0;
+  max-width: 350px;
+  height: 240px;
+  background: #000;
+  position: absolute;
+  border-radius: 10px;
+}
+.css-slideshow img{
+  box-shadow: 0 0 40px #666;
+  border-radius: 10px;
+}
+.css-slideshow figcaption{
+  position: absolute;
+  top: 0;
+  color: #fff;
+  background: rgba(0,0,0, .3);
+  font-size: .8em;
+  padding: 8px ;
+  opacity: 0;
+  transition: opacity .5s;
+ 
+}
+.css-slideshow:hover figure figcaption{
+  transition: opacity .5s;
+  opacity: 1;
+  
+}
+.css-slideshow-attr{
+  max-width: 495px;
+  text-align: right;
+  font-size: .7em;
+  font-style: italic;
+  margin:0 auto;
+  
+}
+
+.css-slideshow figure{
+  opacity:0;
+}
+
+figure:nth-child(1) {
+  animation: xfade 10s 5s infinite;
+}
+figure:nth-child(2) {
+  animation: xfade 10s 0s infinite;
+}
+
+@keyframes xfade{
+  0%{
+    opacity: 1;
+  }
+  49.9% {
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+  }
+  98% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
