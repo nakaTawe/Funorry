@@ -1,0 +1,126 @@
+<!DOCTYPE .html>
+    <html>
+        <head>
+            <link rel="icon" type="image/png" href="images/laugh_em.png" />
+			<link rel="stylesheet" type="text/css" href="slideshow1.css"></link>
+			<link rel="stylesheet" type="text/css" href="funorry.css"></link>
+			<meta charset="utf-8">
+            <title>
+              Funorry
+            </title>
+			
+			
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>
+$(document).ready(function(){
+    $("#1st").click(function(){
+        $("#div1").show();
+		$("#div2").hide();
+		$("#div3").hide();
+    });
+    $("#2nd").click(function(){
+        $("#div1").hide();
+		$("#div2").show();
+		$("#div3").hide();
+    });
+	$("#3rd").click(function(){
+        $("#div1").hide();
+		$("#div2").hide();
+		$("#div3").show();
+    });
+});
+</script>
+			
+			
+		</head>
+		<body>
+		    <div class="center">
+		         <img class="img" src="images/far.jpg">
+			</div>
+			<br>
+		     <p class="text">
+               There were two crazy cylons...
+             </p>
+			 <br>
+			 <p class="smalltext">
+			 They like laughing(actually they can’t stop!)  
+			 </p>
+			 <div class="center">
+		         <img class="img" src="images/laugh.jpg">
+			</div>
+			<br>
+			<div style="text-align:center;">
+			<p id="inline" class="smalltext">And other</p><button id="inline" class="btn" onclick="myFunction()">stuff</button>
+			</div>
+			<div class="center"><img id="showimg" class="img1" src="images/BSGO_header.png"></div> 
+			<script>
+             function myFunction() {
+                  var image = document.getElementById("showimg");
+    if (image.src.match("images/BSGO_header.png")) {
+        image.src = "images/vodka.png";
+    } else {
+        image.src = "images/BSGO_header.png";
+    }
+}
+		
+            </script>
+			<p class="smalltext">And there is this weird guy.</p>
+			<div style="text-align:center;">
+			<img class="img1" src="images/strike_pic.png">
+			</div>
+			<p class="smalltext">He "met" the crazy cylons somehow</p>
+			<p class="smalltext">But one day he decided to make a "suprize"</p>
+			<p class="smalltext">but it was something like that....</p>
+			<div style="text-align:center;">
+			    <img class="img" src="images/fail_gif.gif">
+			</div>
+			<p class="smalltext">or...</p>
+			<div style="text-align:center;">
+			    <img class="img1" src="images/skating.gif">
+                <img class="img1" src="images/invisiblewall.gif">
+			</div>
+			<p class="smalltext">This really annoyed them</p>
+			<div style="text-align:center;">
+			    <img class="img1" src="images/angry.jpg">
+			</div>
+			<p class="smalltext1">He knew he f*cked up,so decided to "fix it"!</p>
+			<div style="text-align:center;">
+			    <img class="img2" src="images/fix_it.png">
+			</div>
+			<p class="smalltext2">He really values his friends and doesn’t want to repeat the story...</p>
+			<p class="smalltext2">"I want a second chance to prove myself and you will see i don’t "play" any games"</p>
+			<div class="css-slideshow">
+               <figure>
+		           <img src="images/sorry.jpg" alt="class-header-css3" width="350" height="240" class="alignnone size-full wp-image-172" />
+	           </figure>
+	           <figure>
+		           <img src="images/i_am.png" alt="class-header-semantics" width="350" height="240" class="alignnone size-full wp-image-179" /> 
+	           </figure>
+           </div>
+               <p class="smalltext1">So,do you forgive him?</p>
+              <div style="text-align:center;display:none;" id="div1">
+                   <img class="img1" src="images/dirty_carrots_delete.png">
+                   
+  
+  
+               </div>
+               <div  style="display:none;" id="div2">
+                   <p class="smalltext2">Well at least i tried but i won’t give up!</p>
+  
+  
+               </div>
+               <div style="text-align:center;display:none;" id="div3">
+                  <p class="smalltext2">Ok...</p>
+				  <img class="img1" src="images/angry_idc.jpg">
+  
+  
+  
+               </div>
+			   <br>
+			    <div style="text-align:center;">
+               <button class="btn" id="1st">Yes</button>
+               <button class="btn" id="2nd">No!</button>
+               <button class="btn" id="3rd">I don’t care...</button>
+           </div>
+			   </body>
+	</html>
